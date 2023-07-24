@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="./Capture.PNG" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;800;900&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;800;900&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/347beaf4f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="fail-model-container hide-disapper">
+      <div class="fail-model">
+        <ul class="dots d-flex align-items-center gap-2 my-4">
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li class="ms-auto fs-4">
+            <i class="fa-solid fa-xmark exit"></i>
+          </li>
+        </ul>
+        <p>Site Name or Url is not valid, Please follow the rules below :</p>
+        <ul class="roles">
+          <li class="mb-3">
+            <i class="fa-solid fa-circle-right"></i>Site name must contain at
+            least 3 characters
+          </li>
+          <li class="mb-3">
+            <i class="fa-solid fa-circle-right"></i>Site URL must be a valid one
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section
+      class="container d-flex flex-column gap-3 pt-5 justify-content-center align-items-center text-center"
+    >
+      <h1>Bookmarker</h1>
+      <div class="form-container">
+        <h2>
+          <i class="fa-solid fa-bookmark"></i>
+          Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <form method="post">
+          <label for="sitename">
+            <i class="fa-solid fa-book-bookmark"></i>
+            Site Name
+          </label>
+          <input
+            type="text"
+            id="sitename"
+            name="sitename"
+            placeholder="Bookmark Name   "
+            class="form-control"
+          />
+
+          <label for="siteurl">
+            <i class="fa-solid fa-link"></i>
+            Site URL
+          </label>
+          <input
+            type="text"
+            id="siteurl"
+            name="siteurl"
+            placeholder="Website URL   "
+            class="form-control"
+          />
+
+          <button class="btn px-5" type="submit">submit</button>
+        </form>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>index</th>
+            <th>website name</th>
+            <th>visit</th>
+            <th>delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+:root {
+  --body-color: #f7ecde;
+  --identity-color: #fec260;
+}
+
+body {
+  background-color: var(--body-color);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hide-disapper {
+  display: none !important;
+}
+.fail-model-container {
+  background-color: #847e7696;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fail-model-container .fail-model {
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.442);
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  z-index: 1000;
+}
+.fail-model .dots li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.fail-model .dots li:first-of-type {
+  background-color: rgba(255, 0, 0, 0.871);
+}
+.fail-model .dots li:nth-of-type(2) {
+  background-color: rgba(255, 255, 0, 0.873);
+}
+.fail-model .dots li:nth-of-type(3) {
+  background-color: rgba(0, 128, 0, 0.879);
+}
+.fail-model .dots li:nth-of-type(4) {
+  line-height: 20px;
+}
+.fail-model p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.fail-model .roles {
+  font-size: 18px;
+  word-spacing: 4px;
+}
+.fail-model .roles i {
+  margin-right: 5px;
+  color: darkred;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  position: relative;
+  margin-top: 20px;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  background-color: #fec260;
+  width: 100%;
+  height: 18px;
+  left: 0;
+  bottom: 3px;
+  z-index: -1;
+  transition: 0.3s;
+}
+h1:hover::after {
+  height: 30px;
+}
+.form-container {
+  border-color: black;
+  border-style: dotted none;
+  border-width: 2px;
+  padding: 30px;
+  margin-top: 40px;
+  width: 100%;
+}
+.form-container h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, #3ca55c, #f5e964);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form-container form {
+  margin-top: 10px;
+  text-align: start;
+}
+.form-container form label {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+.form-container form label i {
+  padding-right: 10px;
+}
+.form-container form input:focus {
+  box-shadow: 0 0 0 0.25rem #fec26055;
+  border-color: #d99c39;
+}
+.form-container form button {
+  display: block;
+  background-color: #d1512d;
+  margin: 10px auto 0;
+  font-size: 18px;
+  color: white;
+}
+form .btn:hover {
+  color: white;
+  background-color: #d1512de6;
+  border-color: none;
+}
+.visit {
+  background-color: green;
+  color: white;
+}
+.visit.btn:hover {
+  color: white;
+  background-color: rgba(0, 128, 0, 0.836);
+  border-color: none;
+}
+@media (max-width: 767.98px) {
+  .form-container h2 {
+    font-size: 20px;
+  }
+}
