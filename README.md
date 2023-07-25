@@ -1,7 +1,7 @@
 # BookMarker
 Html-Bootstrap-CSS-JavaScript
 # features
-1-add web site with name && url      return
+1-add web site with name && url    
 2-can't add the same web site with the same name twice       return 
 3-validate your site name and url so you must enter site name(at least 3 char)and correct Url([https;//]google.com/[...])     return   
     and there are indicators show you if you meet the rules while writing        return  
